@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aditya.autoreply">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:name="com.aditya.autoreply.ApplicationClass"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_splash"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+
+        <activity android:name="com.aditya.autoreply.ui.CustomizeMessageActivity"
+           android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
+        </activity>
+
+        <activity android:name="com.aditya.autoreply.ui.CreateUpdateActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"/>
+
+        <activity android:name="com.aditya.autoreply.ui.SplashActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity android:name=".ui.AboutPopup"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar"/>
+
+        <activity android:name="com.aditya.autoreply.ui.MainActivity"/>
+        <service
+            android:name="com.aditya.autoreply.MyNotifiService"
+            android:priority="1000"
+            android:label="notificationMonitoring"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action      android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

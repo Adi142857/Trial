@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/message_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/expected_msg_txt_header"
+        android:layout_width="150dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="@dimen/margin_sixteen"
+        android:layout_marginEnd="@dimen/margin_sixteen"
+        android:fontFamily="@font/worksans_bold"
+        android:text="Incoming message"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/expected_msg_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="-22dp"
+        android:layout_marginEnd="@dimen/margin_sixteen"
+        android:fontFamily="@font/worksans_bold"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/reply_msg_txt_header"
+        android:layout_width="150dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="@dimen/margin_ten"
+        android:layout_marginEnd="@dimen/margin_sixteen"
+        android:fontFamily="@font/worksans_bold"
+        android:text="Your reply for msg"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/reply_msg_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="165dp"
+        android:layout_marginTop="-22dp"
+        android:layout_marginEnd="@dimen/margin_sixteen"
+        android:layout_marginBottom="@dimen/margin_sixteen"
+        android:fontFamily="@font/worksans_bold"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/divider_line" />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/margin_eight"
+        android:layout_marginEnd="@dimen/padding_sixteen"
+        android:layout_marginBottom="@dimen/margin_eight"
+        android:background="@drawable/button_background"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:text="@string/delete_msg"
+        android:visibility="gone" />
+
+</LinearLayout>
+

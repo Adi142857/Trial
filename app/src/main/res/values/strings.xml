@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Simple testing app</string>
+    <string name="enter_the_expected_message">Enter the expected message from your friend</string>
+    <string name="your_expected_message_from_friends">Message received</string>
+    <string name="your_reply_message">Reply</string>
+    <string name="add">ADD</string>
+    <string name="delete_msg">Delete this message</string>
+    <string name="enable_notification">Turn on notification listening service</string>
+    <string name="auto_reply">Auto Reply</string>
+    <string name="create">create</string>
+    <string name="no_reply_available">No reply available</string>
+    <string name="done">Done</string>
+    <string name="about_me">About me</string>
+    <string name="howdy_user">Howdy Stranger!</string>
+    <string name="i_am">I am Suyash Mishra residing in Hyderabad, India</string>
+    <string name="share">SHARE THIS APP</string>
+    <string name="source_code">Source Code</string>
+    <string name="give_permission">This app requires notification access in order to read notifications and reply accordingly.</string>
+    <string name="give_permission_access">give permission access</string>
+    <string name="update">UPDATE</string>
+    <string name="delete">DELETE</string>
+</resources>

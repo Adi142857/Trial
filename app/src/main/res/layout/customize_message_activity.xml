@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.coordinatorlayout.CircularRevealCoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+
+    <com.google.android.material.circularreveal.CircularRevealRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Auto Bot edit menu"
+            android:textColor="@color/black"
+            android:layout_marginStart="16dp"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/notification_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="30dp"
+            android:layout_toStartOf="@+id/info_button"
+             />
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/no_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+
+            android:textColor="@color/header_color" />
+
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/notification_layout"
+            android:layout_marginTop="50dp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/botto_layout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            style="@style/MyCardView"
+             android:elevation="20dp"
+            app:cardElevation="20dp"
+            android:layout_alignParentBottom="true">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="@dimen/margin_sixteen"
+                android:layout_marginTop="@dimen/margin_ten"
+                android:layout_marginEnd="@dimen/margin_sixteen"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginBottom="@dimen/margin_sixteen"/>
+
+            <TextView
+                android:id="@+id/give_permission_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/give_permission_access"
+                android:textColor="@color/fab_color"
+                android:textSize="16sp"
+                android:textAllCaps="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/transparent_background"
+                android:layout_marginTop="16dp"
+                 android:drawablePadding="8dp"
+                 android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:layout_marginBottom="@dimen/margin_sixteen"
+                android:layout_marginEnd="@dimen/margin_sixteen"
+                  android:layout_marginStart="@dimen/margin_sixteen"
+                 />
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </com.google.android.material.circularreveal.CircularRevealRelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+        android:id="@+id/create_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="70dp"
+        android:baselineAlignBottom="true"
+        android:text="@string/create"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:backgroundTint="@color/fab_color"
+        app:icon="@drawable/ic_add_white"
+        app:iconTint="@color/white"
+        app:layout_anchorGravity="end"
+        android:background="@drawable/button_background"/>
+
+</com.google.android.material.circularreveal.coordinatorlayout.CircularRevealCoordinatorLayout>
